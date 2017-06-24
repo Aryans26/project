@@ -1,0 +1,167 @@
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!doctype html>
+<html>
+<head>
+<c:url value="/resource" var="res" />
+
+<!-- <link rel="stylesheet" ref="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="${res}/css/bootstrap.min.css" />
+<link rel="stylesheet" href="${res}/css/style.css" />
+<link rel="stylesheet" href="${res}/css/font-awesome/css/font-awesome.min.css" />
+
+</head>
+<body>
+	<%@include file="navbar.jsp"%>
+
+<div class="Container">
+<div class="row col-md-10 col-lg-8 col-lg-offset-2">
+       <form method="post" action="shop-checkout4.html">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li ><a href="<c:url value="/previous"/>"><i class="fa fa-map-marker"></i><br>Billing Address</a></li>
+                                    <li class="active"><a href="<c:url value="/pay"/>"><i class="fa fa-money"></i><br>Confirm Your Order</a></li>
+                                    <li class="disabled"><a href="<c:url value="/orderconfirmation"/>"><i class="fa fa-eye"></i><br>Shipment Address</a></li>
+                                </ul>
+</form>
+</div>
+<div class="col-md-10 col-lg-8 col-lg-offset-2 container">
+<div class="col-md-6 col-sm-6 billing-add">
+		<h3 class="text-center">Billing Address</h3>
+<!-- 		<div class="row"> -->
+<!-- 		<div class="col-md-6 col-sm-6 b-r"><b>Name :</b></div> -->
+<%-- 		<div class="col-md-6 col-sm-6">${billing.getU_name()} </div> --%>
+<!-- 		</div> -->
+		<div class="row">
+		<div class="col-md-6 col-sm-6 b-r"><b>Email :</b></div>
+		<div class="col-md-6 col-sm-6">${billing.getEmail()}</div>
+		</div>
+		<div class="row"><div class="col-md-6 col-sm-6 b-r"><b>Mobile :</b></div><div class="col-md-6 col-sm-6">${billing.getPhone()}</div></div>
+		<div class="row"><div class="col-md-6 col-sm-6 b-r"><b>Address:</b></div><div class="col-md-6 col-sm-6">${billing.getHouse_no()}<br>
+		${billing.getStreet_name()}<br>${billing.getCity()}<br>${billing.getState()}<br>${billing.getCountry()}<br>
+		${billing.getPincode()}<br>
+		</div></div>
+		
+		</div>
+	<div class="col-md-6 col-sm-6 billing-add">
+	     <h3 class="text-center">Shipment Address</h3>
+                                          
+                                               <div class="row" ><div class="col-md-6 col-sm-6 b-r"><b>Name:</b></div> <div class="col-md-6 col-sm-6 "><b>${shippingAddress.getShip_name()}  .</div></div>
+                                                <div class="row" ><div class="col-md-6 col-sm-6 b-r"><b>Email:</b></div><div class="col-md-6 col-sm-6">${shippingAddress.getShip_email()} .</div></div>
+                                               <div class="row" ><div class="col-md-6 col-sm-6 b-r"> <b>Phone:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_mono()} .</div></div>
+                                                 <div class="row" ><div class="col-md-6 col-sm-6 b-r"> <b>House Number:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_houseno()} .</div></div>
+                                               <div class="row" ><div class="col-md-6 col-sm-6 b-r"> <b>Street:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_streetname()} .</div></div>
+                                              <div class="row"  ><div class="col-md-6 col-sm-6 b-r"><b>City:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_city()} .</div></div>
+                                               <div class="row" ><div class="col-md-6 col-sm-6 b-r"> <b>Country:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_country()} .</div></div>
+                                                <div class="row" ><div class="col-md-6 col-sm-6 b-r"><b>Pin Code :</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_pincode()}</div></div>
+                                                
+                                            
+                                            
+</div>
+                                                 </div>
+</div>
+ 
+  
+
+            <div class="row">
+            <div class="span15">
+
+                <div class="col-lg-8 col-lg-offset-2">
+<center>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 clearfix" id="checkout">
+
+<!--                         <div class="box"> -->
+                     
+<!--                                 <div class="container"> -->
+<!--                                    <div class="row"> -->
+                                       
+<!--                                             <div class="box payment-method"> -->
+											
+                                           </table>
+                                        </div>
+                                        <div class="col-sm-6">
+<!--                                             <div class="box payment-method"> -->
+											<center>
+                                           
+                                        </div>
+</center>
+                                        
+                                        </div>
+                                    </div>
+									
+                                    <!-- /.row -->
+									<div class="content">
+									<div class="row">
+									<div class="col-lg-8 col-lg-offset-2">
+									<table style="border: 1px solid black" >
+    <thead style="border: 1px solid black">
+      <div class="row"  style="background-color: #eee">
+      <th style="border: 1px solid black">Product Image</th>
+        <th style="border: 1px solid black">Product Name</th>
+<!--         <th>Description</th> -->
+        <th style="border: 1px solid black">Category Name</th>
+        <th style="border: 1px solid black">Seller Name</th>
+        <th style="border: 1px solid black">Price</th>
+      </div>
+    </thead>
+    <tbody>
+   
+    <c1:if test="${prot!=null}">
+      <div class="row" >
+        <div style="border: 1px solid black"><img src="<c:url value='/resource/images/${prot.getP_id()}.jpg'/>" width=150px height=200px></div>
+        <div style="border: 1px solid black">${prot.getP_Name()}</div>
+<%--         <div>${product.getDes()}</div> --%>
+        <div style="border: 1px solid black">${prot.getCategory().getCat_name()}</div>
+        <div style="border: 1px solid black">${prot.getSeller().getName()}</div>
+        <div style="border: 1px solid black">${prot.getPrice()}</div>
+      </div>
+      </c1:if>
+    <c1:if test="${prot==null}">
+     <c1:forEach items="${cartItems}" var="c1">
+      <div class="row" >
+        <div style="border: 1px solid black"><img src=""></div>
+        <div style="border: 1px solid black">${c1.getProduct().getP_Name()}</div>
+<%--         <div>${c1.getproduct.getDes()}</div> --%>
+        <div style="border: 1px solid black">${c1.getProduct().getCategory().getCat_name()}</div>
+        <div style="border: 1px solid black">${c1.getProduct().getSeller().getName()}</div>
+        <div style="border: 1px solid black">${c1.getProduct().getPrice()}</div>
+      </div>
+      </c1:forEach>
+      </c1:if>
+   
+
+  </tbody>
+ </table>
+     <p calss="pull-left">Total price=Rs${prot.getPrice()}
+			<h2> Order will Be deliverde to You with in 7 busisness days</h2>						
+			</div>
+									</div>
+									</div>
+                                <div class="box-footer">
+                                         <div class="pull-left">
+                                        <a href="<c:url value="/previous"/>" class="btn btn-default"><i class="fa fa-chevron-left"></i>previous</a>
+                                        </div>
+                                         <div class="pull-right">
+                                        <a href="<c:url value="/pay"/>"  class="btn btn-template-main"><i class="fa fa-chevron-right">Pay</i></a>
+                                        </button>
+                                        </div>
+                                     </div>
+                                </div>
+                                <!-- /.content -->
+                                
+                                
+
+    </div>
+
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+
+Jun 17, 2017 23:21:53.16 NEW SESSION
+Jun 17, 2017 23:21:53.16 [8940:3452:0617/232153.158:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: file:///C:/Users/Suhaib/Music/Haseeno%20Ka%20Deewana%20Video%20Song%20_%20Kaabil%20_%20Hrithik%20Roshan,%20Urvashi%20Rautela%20_%20Rafta_HD.mp4,*
+Jun 17, 2017 23:21:53.16 [8940:3452:0617/232153.158:ERROR:content_settings_pref.cc(233)] Invalid pattern strings: file:///C:/Users/Suhaib/Music/Haseeno%20Ka%20Deewana%20Video%20Song%20_%20Kaabil%20_%20Hrithik%20Roshan,%20Urvashi%20Rautela%20_%20Rafta_HD.mp4,*
+
+Jun 20, 2017 17:54:51.47 NEW SESSION
+Jun 20, 2017 17:54:51.47 [4484:8532:0620/175451.472:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: file:///C:/Users/Suhaib/Music/Haseeno%20Ka%20Deewana%20Video%20Song%20_%20Kaabil%20_%20Hrithik%20Roshan,%20Urvashi%20Rautela%20_%20Rafta_HD.mp4,*
+Jun 20, 2017 17:54:51.47 [4484:8532:0620/175451.477:ERROR:content_settings_pref.cc(233)] Invalid pattern strings: file:///C:/Users/Suhaib/Music/Haseeno%20Ka%20Deewana%20Video%20Song%20_%20Kaabil%20_%20Hrithik%20Roshan,%20Urvashi%20Rautela%20_%20Rafta_HD.mp4,*
+Jun 20, 2017 18:37:48.28 [4484:5468:0620/183748.212:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Jun 20, 2017 18:38:16.56 [4484:5468:0620/183816.565:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Jun 20, 2017 18:39:07.13 [4484:5468:0620/183907.130:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Jun 20, 2017 18:40:44.51 [4484:5468:0620/184044.511:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Jun 20, 2017 18:43:52.91 [4484:5468:0620/184352.913:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Jun 20, 2017 18:51:27.20 [4484:5468:0620/185127.201:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Jun 20, 2017 19:01:27.20 [4484:5468:0620/190127.203:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Jun 20, 2017 19:03:35.25 [4484:5468:0620/190335.258:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Jun 20, 2017 20:13:35.90 [4484:8532:0620/201335.901:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Jun 20, 2017 20:13:36.10 [4484:5468:0620/201335.992:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+Jun 20, 2017 20:13:40.27 [4484:5468:0620/201340.274:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+Jun 20, 2017 20:13:45.91 [4484:5468:0620/201345.910:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+Jun 20, 2017 20:14:04.94 [4484:8532:0620/201404.939:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Jun 20, 2017 20:14:05.42 [4484:5468:0620/201405.423:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Jun 20, 2017 20:14:30.11 [4484:7860:0620/201430.117:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+Jun 20, 2017 20:14:59.44 [4484:5468:0620/201459.449:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Jun 20, 2017 20:14:59.45 [4484:7860:0620/201459.449:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+Jun 20, 2017 20:14:59.45 [4484:7860:0620/201459.451:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+Jun 20, 2017 20:15:03.87 [4484:8532:0620/201503.870:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Jun 20, 2017 20:15:16.82 [4484:5468:0620/201516.822:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+Jun 20, 2017 20:15:16.82 [4484:7860:0620/201516.823:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+Jun 20, 2017 20:15:20.00 [4484:5468:0620/201520.008:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+Jun 20, 2017 20:15:20.01 [4484:7860:0620/201520.009:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+Jun 20, 2017 20:15:32.43 [4484:5468:0620/201532.431:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+Jun 20, 2017 20:15:32.43 [4484:7860:0620/201532.432:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+Jun 20, 2017 20:15:39.35 [4484:5468:0620/201539.354:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+Jun 20, 2017 20:15:39.35 [4484:7860:0620/201539.355:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+Jun 20, 2017 22:00:02.40 [4484:8532:0620/220002.399:ERROR:CONSOLE(0)] "Error in event handler for (unknown): TypeError: Cannot read property 'allCookies' of undefined
+Jun 20, 2017 22:00:02.42     at chrome-extension://ffdcfjdljhbehggjdkdioajnknjcpbjb/js/sbc_cookies_mon.js:1:2444", source: https://www.google.co.in/_/chrome/newtab?rlz=1C1CHBF_enIN724IN724&espv=2&ie=UTF-8 (0)
+Jun 20, 2017 22:00:02.42 [4484:8532:0620/220002.402:ERROR:CONSOLE(0)] "Error in event handler for (unknown): TypeError: Cannot read property 'ChromeID' of undefined
+Jun 20, 2017 22:00:02.42     at chrome-extension://ffdcfjdljhbehggjdkdioajnknjcpbjb/js/sbc_cookies_mon.js:1:2554", source: https://www.google.co.in/_/chrome/newtab?rlz=1C1CHBF_enIN724IN724&espv=2&ie=UTF-8 (0)

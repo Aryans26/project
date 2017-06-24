@@ -1,0 +1,71 @@
+package com.niit.backend.model;
+
+import java.util.UUID;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+
+
+
+@Table
+@Component
+public class CartItem {
+	@Id
+	private String CartItem_Id;
+	private float CartItem_Price;
+	
+	@ManyToOne
+	@JoinColumn(name="Cart_Id")
+	private Cart cart;
+	
+	@OneToOne
+	@JoinColumn(name="p_id")
+	private Product Product;
+
+
+	public Product getProduct() {
+		return Product;
+	}
+
+	public void setProduct(Product product) {
+		Product = product;
+	}
+
+	public CartItem(){
+		this.CartItem_Id="CARTITM"+UUID.randomUUID().toString().substring(30).toUpperCase();
+	}
+	
+	public String getCartItem_Id() {
+		return CartItem_Id;
+	}
+
+	public void setCartItem_Id(String cartItem_Id) {
+		CartItem_Id = cartItem_Id;
+	}
+
+	public float getCartItem_Price() {
+		return CartItem_Price;
+	}
+
+	public void setCartItem_Price(float cartItem_Price) {
+		CartItem_Price = cartItem_Price;
+	}
+
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+
+	
+
+
+}

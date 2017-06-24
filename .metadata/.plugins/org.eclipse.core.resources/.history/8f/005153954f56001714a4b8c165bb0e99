@@ -1,0 +1,147 @@
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!doctype html>
+<html>
+<head>
+<c:url value="/resource" var="res" />
+
+<!-- <link rel="stylesheet" ref="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="${res}/css/bootstrap.min.css" />
+<link rel="stylesheet" href="${res}/css/style.css" />
+<link rel="stylesheet" href="${res}/css/font-awesome/css/font-awesome.min.css" />
+
+</head>
+<body>
+	<%@include file="navbar.jsp"%>
+	<div class="span11">
+
+	<div class="col-md-12  col-sm-12  col-xs-8 "
+	style="background: #fff; padding: 30px;">
+
+	<div class="col-md-6 col-sm-6 col-xs-12">
+		<h3 class="text-center">Billing Address</h3>
+
+		<hr>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<form:input type="text" path="user.U_email" name="email" class="form-control input-sm"					
+				placeholder="Emailid" disabled="true"/> 
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<form:input type="number" name="mono" path="user.U_phoneno" disabled="true"
+			class="form-control input-sm" placeholder="Mobile no"/>
+			</div>
+		</div>
+		
+
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="form-group">
+				<form:input type="text" class="form-control" path="billing.House_no" disabled="true" placeholder="House name and number"/>                                               
+                                            
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+				<form:input type="text" name="country" disabled="true"
+				class="form-control input-sm" placeholder="country" path="billing.Country" /> 
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+			<form:input type="text" name="city" disabled="true" 
+				class="form-control input-sm" placeholder="city" path="billing.City"/> 
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+			<form:input type="text" name="pincode" disabled="true" 
+					class="form-control input-sm" placeholder="pincode" path="billing.Pincode" /> 
+			</div>
+		</div>
+		<input class="coupon_question" type="checkbox" name="coupon_question"
+			value="1"> <span class="item-text">Check Shipping
+			address</span>
+	</div>
+
+
+	<div class="col-md-6 shipping col-sm-6 col-xs-12">
+		<h3 class="text-center">shipping Address</h3>
+
+		<hr>
+	<c:url value="/orderConfirm" var="a"/>
+		<form:form action="${a}" method="post" commandName="shippingAddress">
+		
+	
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<form:input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name" path="U_name"/> 
+			</div>
+		</div>
+<!-- 		<div class="col-xs-6 col-sm-6 col-md-6"> -->
+<!-- 			<div class="form-group"> -->
+<%-- 				<form:input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name" path="lastname"/>  --%>
+<!-- 			</div> -->
+<!-- 		</div> -->
+
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<form:input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Email id" path="email"/> 
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<form:input type="text" name="Mobile_no" class="form-control input-sm" placeholder="Mobile no" path="mono"/> 
+		</div>
+</div>
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="form-group">
+				<form:input type="text" class="form-control" path="houseno"/>                                                
+                                           
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+				<form:input type="text"	class="form-control input-sm" placeholder="country" path="country"/>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+				<form:input type="text"	class="form-control input-sm" placeholder="city" path="city"/> 
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+				<form:input type="text" class="form-control input-sm" placeholder="pincode" path="pincode" /> 
+			</div>
+		</div>
+
+	<div class="col-md-12">
+		<input type="submit" class="btn btn-primary pull-right" value="Continue">
+	</div>
+   </form:form>
+</div>
+</div></div>
+<!--
+Footer
+-->
+
+<!-- /container -->
+
+<div class="copyright">
+<div class="container">
+	
+	<span>Copyright &copy; 2013<br> bootstrap ecommerce shopping template</span>
+</div>
+</div>
+<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
+
+  </body>
+</html>

@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+.headder {
+	min-height: 25px;
+	background-color: #E0013F;
+}
+
+.navbar-default, .navbar-default li {
+	background-color: #e40046;
+	color: white;
+}
+
+.navbar-default li a {
+	color: #FFF;
+	font-weight: bold;
+}
+
+.navbar-nav li:hover, .navbar-nav li:focus, .navbar-nav li:active {
+	background-color: #333;
+}
+
+.navbar-nav dropdown:hover {
+	background-color: #333;
+}
+
+.dropbtn {
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.
+.dropdown:hover {
+	background-color: #333;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+	right: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	font-size: 14px !important;
+	font-weight: normal !important;
+	text-align: center;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #333;
+}
+
+.dropdown-content .hvr-reg-bordertop {
+	border-top: 1px solid #999;
+	padding-top: 20px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.form-fill{
+	max-width:500px;
+	box-shadow:2px 2px 8px  grey;
+	padding:30px 20px;
+	margin:10px auto;
+	border-radius:10px;
+}
+
+.form-list-table{
+	border:2px solid grey;
+	box-shadow:4px 4px 8px grey;
+	border-radius:10px;
+}
+.head3{
+	color:#e40046;
+	font-weight:bold;
+	text-align:center;
+	text-shadow:2px 2px 4px grey;
+}
+
+.items-list-head > div{
+	Color:red;
+	text-align:center;
+	font-weight:bolder;
+	font-size:20px;
+}
+.items-list > div{
+	border-top:1px solid grey;
+	line-height:40px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.box-shadow{
+	border-radius:10px;
+	box-shadow:2px 2px 8px grey;
+}
+
+.list-head{
+	font-size:16px;
+	font-weight:bold;
+	text-shadow:1px 1px 1px grey;
+}
+
+.billing-add  b{
+	text-align:right;
+}

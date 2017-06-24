@@ -1,0 +1,112 @@
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!doctype html>
+<html>
+<head>
+<c:url value="/resource" var="res" />
+
+<!-- <link rel="stylesheet" ref="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="${res}/css/bootstrap.min.css" />
+<link rel="stylesheet" href="${res}/css/style.css" />
+<link rel="stylesheet" href="${res}/css/font-awesome/css/font-awesome.min.css" />
+
+</head>
+<body>
+	<%@include file="navbar.jsp"%>
+	<div class="span11">
+
+	<div class="col-md-12  col-sm-12  col-xs-8 "
+	style="background: #fff; padding: 30px;">
+
+	<div class="col-md-6 col-sm-6 col-xs-12">
+		<h3 class="text-center">Billing Address</h3>
+		<div class="col-md-2 col-sm-3"><b>Name :</b></div><div class="col-md-8 col-sm-8">${user.getU_name()} </div>
+		<div class="col-md-2 col-sm-3"><b>Email :</b></div><div class="col-md-8 col-sm-8">${user.getU_email()}</div>
+		<div class="col-md-2 col-sm-3"><b>Mobile :</b></div><div class="col-md-8 col-sm-8">${user.getU_phoneno()}</div>
+		<div class="col-md-2 col-sm-3"><b>Address:</b></div><div class="col-md-8 col-sm-8">${billing.getHouse_no()}<br>
+		${billing.getStreet_name()}<br>${billing.getCity()}<br>${billing.getState()}<br>${billing.getCountry()}<br>
+		${billing.getPincode()}<br>
+		</div>
+	
+	</div>
+
+
+	<div class="col-md-6 shipping col-sm-6 col-xs-12">
+		<h3 class="text-center">shipping Address</h3>
+
+		<hr>
+	<c:url value="/orderConfirm" var="a"/>
+		<form:form action="${a}" method="post" commandName="shippingAddress">
+		
+	
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<form:input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name" path="Ship_name"/> 
+			</div>
+		</div>
+<!-- 		<div class="col-xs-6 col-sm-6 col-md-6"> -->
+<!-- 			<div class="form-group"> -->
+<%-- 				<form:input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name" path="lastname"/>  --%>
+<!-- 			</div> -->
+<!-- 		</div> -->
+
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<form:input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Email id" path="Ship_email"/> 
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<form:input type="text" name="Mobile_no" class="form-control input-sm" placeholder="Mobile no" path="Ship_mono"/> 
+		</div>
+</div>
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="form-group">
+				<form:input type="text" class="form-control input-sm" placeholder="House number" path="Ship_houseno"/>                                                
+                                           
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+				<form:input type="text"	class="form-control input-sm" placeholder="city" path="Ship_city"/> 
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+				<form:input type="text"	class="form-control input-sm" placeholder="country" path="Ship_country"/>
+			</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="form-group">
+				<form:input type="text" class="form-control input-sm" placeholder="pincode" path="Ship_pincode" /> 
+			</div>
+		</div>
+
+	<div class="col-md-12">
+		<input type="submit" class="btn btn-primary pull-right" value="Continue">
+	</div>
+   </form:form>
+</div>
+</div></div>
+<!--
+Footer
+-->
+
+<!-- /container -->
+
+<div class="copyright">
+<div class="container">
+	
+	<span>Copyright &copy; 2013<br> bootstrap ecommerce shopping template</span>
+</div>
+</div>
+<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
+
+  </body>
+</html>

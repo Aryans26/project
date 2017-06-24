@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="fileinput.FileInput"/>
+<fullyQualifiedTypeName name="javax.persistence.Transient"/>
+<fullyQualifiedTypeName name="com.niit.backend.model.BillingAddress"/>
+<fullyQualifiedTypeName name="com.niit.backend.Dao.BillingAddressDao"/>
+<fullyQualifiedTypeName name="com.niit.backend.Dao.CartItemsDao"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Alert"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="org.springframework.mail.javamail.JavaMailSenderImpl"/>
+<fullyQualifiedTypeName name="com.niit.backend.model.Users"/>
+<fullyQualifiedTypeName name="com.niit.backend.Dao.UsersDao"/>
+<fullyQualifiedTypeName name="com.niit.frontend.Otp.Otpganarater"/>
+<fullyQualifiedTypeName name="org.springframework.mail.MailSender"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.mail.javamail.JavaMailSender"/>
+</qualifiedTypeNameHistroy>

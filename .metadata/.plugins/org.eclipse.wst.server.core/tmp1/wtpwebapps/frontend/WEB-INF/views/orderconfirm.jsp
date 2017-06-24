@@ -1,0 +1,72 @@
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!doctype html>
+<html>
+<head>
+<c:url value="/resource" var="res" />
+
+<!-- <link rel="stylesheet" ref="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="${res}/css/bootstrap.min.css" />
+<link rel="stylesheet" href="${res}/css/style.css" />
+<link rel="stylesheet" href="${res}/css/font-awesome/css/font-awesome.min.css" />
+
+</head>
+<body>
+	<%@include file="navbar.jsp"%>
+<br>
+<div class="container box-shadow border-radius">
+<div class="row col-md-10 col-lg-8 col-lg-offset-2">
+       <form method="post" action="shop-checkout4.html">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li ><a href="<c:url value="/previous"/>"><i class="fa fa-map-marker"></i><br>Billing Address</a></li>
+                                    <li class="active"><a href="<c:url value="/pay"/>"><i class="fa fa-money"></i><br>Confirm Your Order</a></li>
+                                    <li class="disabled"><a href="<c:url value="/orderconfirmation"/>"><i class="fa fa-eye"></i><br>Shipment Address</a></li>
+                                </ul>
+</form>
+</div>
+
+<div class="col-md-10 col-lg-8 col-lg-offset-2 ">
+<div class="col-md-6 col-sm-6 billing-add">
+		<h3 class="text-center">Billing Address</h3>
+<!-- 		<div class="row"> -->
+<!-- 		<div class="col-md-6 col-sm-6 b-r"><b>Name :</b></div> -->
+<%-- 		<div class="col-md-6 col-sm-6">${billing.getU_name()} </div> --%>
+<!-- 		</div> -->
+		<div class="row">
+		<div class="col-md-6 col-sm-6 b-r"><b>Email :</b></div>
+		<div class="col-md-6 col-sm-6">${billing.getEmail()}</div>
+		</div>
+		<div class="row"><div class="col-md-6 col-sm-6 b-r"><b>Mobile :</b></div><div class="col-md-6 col-sm-6">${billing.getPhone()}</div></div>
+		<div class="row"><div class="col-md-6 col-sm-6 b-r"><b>Address:</b></div><div class="col-md-6 col-sm-6">${billing.getHouse_no()}<br>
+		${billing.getStreet_name()}<br>${billing.getCity()}<br>${billing.getState()}<br>${billing.getCountry()}<br>
+		${billing.getPincode()}<br>
+		</div></div>
+		
+		</div>
+	<div class="col-md-6 col-sm-6 billing-add">
+	     <h3 class="text-center">Shipment Address</h3>
+                                          
+                                               <div class="row" ><div class="col-md-6 col-sm-6 b-r"><b>Name:</b></div> <div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_name()}  .</div></div>
+                                                <div class="row" ><div class="col-md-6 col-sm-6 b-r"><b>Email:</b></div><div class="col-md-6 col-sm-6">${shippingAddress.getShip_email()} .</div></div>
+                                               <div class="row" ><div class="col-md-6 col-sm-6 b-r"> <b>Phone:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_mono()} .</div></div>
+                                                 <div class="row" ><div class="col-md-6 col-sm-6 b-r"> <b>House Number:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_houseno()} .</div></div>
+                                               <div class="row" ><div class="col-md-6 col-sm-6 b-r"> <b>Street:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_streetname()} .</div></div>
+                                              <div class="row"  ><div class="col-md-6 col-sm-6 b-r"><b>City:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_city()} .</div></div>
+                                               <div class="row" ><div class="col-md-6 col-sm-6 b-r"> <b>Country:</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_country()} .</div></div>
+                                                <div class="row" ><div class="col-md-6 col-sm-6 b-r"><b>Pin Code :</b></div><div class="col-md-6 col-sm-6 ">${shippingAddress.getShip_pincode()}</div></div>
+                                                
+                                            
+                                            
+</div>
+<br> 
+                                                 </div>
+                                                 <br>
+                                                 </div>
+
+</body>
+
+</html>
